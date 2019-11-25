@@ -11,7 +11,6 @@
     "build-flow": "flow-copy-source -i */__tests__* src dist",
     "build-src-watch": "genversion src/version.js && BABEL_ENV=development babel src -d dist --ignore __tests__ --copy-files --watch",
     "validate:all:js": "eslint ./src",
-    "clean": "rimraf dist/",
     "validate:all:ts": "tsc --project ./",
     "validate:all:flow": "flow",
     "tests:ios:test-cover": "cd tests && node_modules/.bin/nyc ./node_modules/.bin/detox test --configuration ios.sim.debug",
