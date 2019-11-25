@@ -19,7 +19,7 @@
     "format:assets": "prettier --ignore-path .gitignore --write \"**/*.{json,md}\"",
     "prepare": "yarn run clean && yarn run build && yarn run build-flow",
     "precommit": "lint-staged",
-     "prepublishOnly": "yarn run validate:all:ts && yarn run validate:all:flow && yarn run validate:all:js"
+       "prepublishOnly": "yarn run validate:all:ts && yarn run validate:all:flow && yarn run validate:all:js"
   },
   "repository": {
     "type": "git",
