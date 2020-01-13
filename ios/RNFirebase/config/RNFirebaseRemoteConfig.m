@@ -84,7 +84,7 @@ RCT_EXPORT_METHOD(activateFetched:
     (RCTPromiseResolveBlock) resolve
             rejecter:
             (RCTPromiseRejectBlock) reject) {
-    BOOL status = [[FIRRemoteConfig remoteConfig] activateFetched];
+    BOOL status = [[FIRRemoteConfig remoteConfig] activate];
     resolve(@(status));
 }
 
