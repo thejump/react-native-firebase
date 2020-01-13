@@ -73,7 +73,7 @@ class RNFirebaseRemoteConfig extends ReactContextBaseJavaModule {
   public void activateFetched(final Promise promise) {
     Boolean status = FirebaseRemoteConfig
       .getInstance()
-      .activateFetched();
+      .activate();
 
     promise.resolve(status);
   }
